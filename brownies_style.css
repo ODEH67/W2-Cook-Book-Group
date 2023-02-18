@@ -6,40 +6,41 @@
 
 #header-click {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 1.2em;
     font-weight: bold;
     position: relative;
     letter-spacing: 0.1em;
 }
 
-#tip-bottun {
+/* #tip-bottun {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.959);
+    color: rgb(255, 255, 255);
     font-size: 1.6em;
     font-weight: bold;
-}
+} */
 
 .header-menu-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 135, 37, 0.904);
+    background-color: rgba(255, 255, 255, 0.961);
     border-radius: 0.5em; 
     padding: 2em 0em 1em;
-    border-bottom:0.4em solid rgba(255, 255, 255, 0.957);
-    /* border-right: 0.5em solid rgba(255, 255, 255, 0.858); */
-    /* border-left: 0.5em solid rgba(255, 255, 255, 0.838); */
-    /* border-top: 0.4em solid rgba(255, 255, 255, 0.909); */
+    border-bottom:0.4em solid rgb(255, 135, 37);
+    /* border-right: 0.5em solid rgb(255, 145, 0); */
+    /* border-left: 0.5em solid rgb(255, 145, 0); */
+    /* border-top: 0.4em solid rgb(255, 145, 0); */
     font-family: 'Roboto', sans-serif;
     font-size: 0.8em;
     }
 
 header {
-    background-image: url(./img/Header/header\ background55.jpg);
+    background-image: url(./img/Header/sweet33.jpg);
+    background-color:rgba(205, 220, 229, 0.607);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:center;
+    background-position: center;
     display: flex;
     flex-direction: column;
     padding: 1em 2em;
@@ -82,7 +83,7 @@ header {
     /* font-family: ; */
     text-align: center;
     line-height: 1.3em;
-    background-color: rgba(240, 248, 255, 0.865);
+    background-color: rgba(240, 248, 255, 0.957);
     border-radius: 1em ;
     font-size: 1.7em;
     margin: 0em 1em;
@@ -104,7 +105,7 @@ header {
     color: rgba(0, 0, 0, 0.941);
     font-size: 3em;
     font-weight: bold;
-    background-color: rgba(240, 248, 255, 0.865);
+    background-color: rgba(240, 248, 255, 0.927);
     border-radius: 0.8em ;
     padding: 1rem;
     font-family: 'Roboto', sans-serif;
@@ -127,7 +128,7 @@ label[for="menu-button"] span{
     background-color: rgba(240, 248, 255, 0);
 }
 
-#header-button {
+/* #header-button {
     padding: 0.9em 1em;
     border: 1.4px solid;
     color: rgb(255, 255, 255);
@@ -136,11 +137,11 @@ label[for="menu-button"] span{
     background-color: rgba(255, 149, 11, 0.954);
     font-size: 0.8em;
     font-weight: bold;
-}
+} */
 
 #header-click:hover {
-    color: rgb(255, 255, 255);
-    border-color: rgb(255, 238, 223);
+    color: rgb(255, 135, 37);
+    border-color: rgb(253, 138, 30);
     cursor: pointer;
     transition: 180ms;
 }
@@ -150,25 +151,26 @@ label[for="menu-button"] span{
     transition: 180ms;
 } */
 
-#header-button:hover, #tip-bottun:hover {
-    color: rgb(251, 231, 227);
-    border-color: rgb(255, 255, 254);
+/* #header-button:hover, #tip-bottun:hover {
+    color: rgb(255, 242, 227);
+    border-color: rgb(255, 243, 231);
     cursor: pointer;
     transition: 180ms;
     transform: scale(1.1);
-}
+} */
 
 
 #header-click:active {
-    color: rgba(7, 7, 7, 0.911);
-    border-color: rgba(0, 0, 0, 0.886);
-    transition: 100ms;
+    color: rgba(249, 84, 1, 0.879);
+    border-color: rgba(255, 119, 29, 0.813);
+    transition: 120ms;
+    transform: scale(1.1);
     /* background-color: rgba(255, 255, 255, 0.059); */
 }
 
 #header-button:active, #tip-bottun:active {
-    color: rgb(255, 255, 255);
-    border-color: rgb(255, 255, 255);
+    color: rgb(255, 248, 240);
+    border-color: rgb(247, 240, 233);
     cursor: pointer;
     transition: 100ms;
     transform: scale(1);
@@ -184,8 +186,9 @@ label[for="menu-button"] span{
     height: 0.2em;
     width: 0%;
     transition: 200ms ease-in-out;
-    background-color: rgba(255, 255, 255, 0.863);
+    background-color: rgb(255, 135, 37);
 }
+
 
 #header-click:hover::before {
     visibility: visible;
@@ -194,7 +197,7 @@ label[for="menu-button"] span{
 
 /* change underneath this comment for each page using class name */
 
-.home-head::after {
+.tips-head::after {
     content: '';
     position: absolute;
     visibility:visible;
@@ -202,14 +205,14 @@ label[for="menu-button"] span{
     left: 0.25em;
     height: 0.2em;
     width: 85%;
-    background-color: rgba(16, 16, 16, 0.769);
+    background-color: rgb(255, 71, 15);
 }
 
 /* .................................................................*/
 
-.button-div {
+/* .button-div {
     padding: 3em 0 2em;
-}
+} */
 
 @media (max-width: 1350px) {
     #header-menu-logo {
@@ -220,6 +223,7 @@ label[for="menu-button"] span{
             font-size: 2.5em;
         }
 }
+
 
 @media (max-width: 1000px) {
 
@@ -291,9 +295,9 @@ label[for="menu-button"] span{
         font-size: 1.3em;
     }
 
-    #tip-bottun {
+    /* #tip-bottun {
         font-size: 1.2em;
-    }
+    } */
 
     #header-click:hover, label[for="menu-button"]:hover {
         color: rgb(255, 240, 189);
